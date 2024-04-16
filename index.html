@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quizz sur le monde du Web" />
+    <meta
+      name="Auteur"
+      content="Angelique Grall, Pierre Juppin, Hippolyte Weber, Michael Lelu"
+    />
+   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Wild Code Quizz</title>
+  </head>
+  <body id="background" class="buttonOpenQuizz">
+    <div class="homeContainer buttonOpenQuizz">
+      <div class="homeContainerOfimg"><img class="imgOfHomeContainer" src="assets/apple-touch-icon-180x180.png"/></div>
+    <div class="welcomeBox"><h1 id="title">Bienvenue sur le
+    <br /> <span id="wild">Wild</span> <span id="code">Code</span> <span id="quizz">Quizz</span></h1>
+    </div>
+    <form id="formQuiz">
+    <input type="text" placeholder="Entrez vôtre nom ici"    class="userPseudoHome"></input>
+    <button type="submit" class="goBtn  buttonOpenQuizz">GO</button>
+    </form>
+  </div>
+    <header class ="buttonOpenQuizz">
+      <div class="topPage">
+      <div class="logo"><img src="assets/apple-touch-icon-180x180.png" alt="Logo Wild Code Quiz"></div>      
+      <div class="boxScore"> 0/10</div>
+    </div>
+    <div id="menuBurgger" class="menu">
+      <a id="closeBtn" href="#" class="close">X</a>
+        <ul>
+          <li><a href="index.html" id="reStart">Redémarrer</a></li>
+          <li><a href="#">Thèmes</a></li>
+          <!-- <li><a href="#">Niveaux</a></li> -->
+          <li><a href="#">Règles</a></li>
+        </ul>
+      </div>
+      <a href="#" id="openBtn">
+        <div class="burggerIcon">
+          <img src="assets/burgerIcone.png" alt="Trois lignes les une en dessous des autres"/>
+        </div>
+      </a>
+    </header>
+    <main class="buttonOpenQuizz">
+      <section class="zoneQuizz">
+        <div class="imageQuestion">
+          <img id="questionImage" src="assets/www.jpg" alt="Montre l'image de la question">
+        </div>
+        <div class="boxQuestion">
+          <div class="question">Question ?</div>
+        </div>
+      </section>
+      <div class="timer"></div>
+      <div class="reponse">
+        <button class="reponseBox "  value="reponse">
+        Reponse A
+        </button>
+        <button class="reponseBox " value="reponse">
+          Reponse B
+        </button>
+        <button class="reponseBox " value="reponse">
+          Reponse C
+        </button>
+        <button class="reponseBox " value="reponse">
+          Reponse D
+        </button>
+      </div>
+    </main>
+    <footer class="bottom">
+      <span><small>Contact</small></span>
+      <span class="footerCenter"><small>Wilders Project</br><a id="freeOfUse" href="https://www.freepik.com/">images from freepik</a></small></span>
+      <span><small>Infos</small></span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
