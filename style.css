@@ -86,6 +86,7 @@ body {
   width: 300px;
   height: 42px;
 }
+
 .goBtn {
   display: flex;
   justify-content: center;
@@ -98,6 +99,10 @@ body {
   background-color: var(--quizzBackgroundColor);
   border-radius: 15px;
   border: solid 3px var(--borderColor);
+}
+.goBtn:hover {
+  background-color:var(--divBackgroundColor) ;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.7) ;
 }
 
 @media screen and (min-width: 800px) {
@@ -218,14 +223,14 @@ body {
 }
 
 .zoneQuizz img {
-  width: 9.5rem;
-  height: 9.5rem;
+  width: 10em;
+  height: 7em;
   border-radius: 15px 15px 0 0;
 }
 @media screen and (min-width: 900px) {
   .zoneQuizz img {
-    width: 12rem;
-    height: 12rem;
+    width: 15em;
+    height: 12em;
     margin-top: -7em;
   }
 }
@@ -264,6 +269,7 @@ body {
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr 1fr;
+  margin-top: 3em;
 }
 
 .reponseBox {
@@ -277,6 +283,7 @@ body {
   color: white;
   font-family: "Anta", sans-serif;
   font-size: 1em;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.7);
 }
 @media screen and (min-width: 800px) {
   .reponseBox {
@@ -286,12 +293,13 @@ body {
 
 .reponseBox:hover {
   background-color: var(--homeBackgroundColor);
-
-  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: none;
 }
 
 /* footer */
-
+.lien {
+  text-decoration: none;
+}
 .bottom {
   background-color: var(--divBackgroundColor);
   display: flex;

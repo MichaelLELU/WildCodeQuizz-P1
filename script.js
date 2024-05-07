@@ -48,25 +48,6 @@ for (let i = 0; i < homeToQuiz.length; i++) {
   });
 }
 
-function startTimer(duration, display) {
-  let theTimer = duration,
-    minutes,
-    seconds;
-  setInterval(function () {
-    minutes = parseInt(theTimer / 60, 10);
-    seconds = parseInt(theTimer % 60, 10);
-
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-
-    display.textContent = minutes + ":" + seconds;
-
-    if (--theTimer < 0) {
-      theTimer = duration;
-    }
-  }, 1000);
-}
-
 window.onload = function () {
   displayNowQuestion();
 };
