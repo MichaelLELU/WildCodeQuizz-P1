@@ -183,7 +183,7 @@ function checkAnswer(selectedAnswer) {
     mainDisplay.style.display = "none";
     buttonOff.style.display = "none";
     textAreaOff.style.display = "none";
-    winQuiz.innerText = `Bravo ${inputValue}!\n Vous avez ${score}/10 `;
+    winQuiz.innerText = score > "5" ?`Bravo ${inputValue} !!!\n Vous avez ${score}/10 ` : `Peut mieux faire ${inputValue},\n Vous avez ${score}/10 ` ;
     winBack.style.backgroundImage = "url(assets/EndImage.jpg)";
     winBack.style.backgroundSize = "100% 100%";
     //ici modification texte de fin de quizz à ajouter
