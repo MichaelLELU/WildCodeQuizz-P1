@@ -1,5 +1,7 @@
 # 💫 About:
 
+defis technique travailler a 4 sur un fichier par langage pour l'integralité du site 
+
 link to: https://wild-code-quizz-p1.vercel.app/
 
 
